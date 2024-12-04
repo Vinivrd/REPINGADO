@@ -17,49 +17,57 @@ const Pastas = () => {
             icone: MdCleaningServices,
             nomePasta: "LIMPEZA",
             descricao: "Pasta destinada a manter a organização dos ambientes, garantindo um espaço agradável para os moradores.",
-            lider: "PINGUIM"
+            lider: "PINGUIM",
+            instagram: "https://www.instagram.com/caio_braga1405/"
         },
         {
             icone: FaGear,
             nomePasta: "MANUTENÇÃO",
             descricao: "Pasta destinada a garantir as boas condições da estrutura da casa",
-            lider: "Kenner"
+            lider: "Hill",
+            instagram: "https://www.instagram.com/mathias.hilbert/"
         },
         {
             icone: GiRelationshipBounds,
             nomePasta: "RELAÇÕES EXTERIORES",
             descricao: "Pasta destinada a estabelecer e manter contatos e parcerias com outras repúblicas, organizações, e entidades externas.",
-            lider: "Vini"
+            lider: "Vini",
+            instagram: "https://www.instagram.com/vinivrd/"
         },
         {
             icone: SiGooglemarketingplatform,
             nomePasta: "MARKETING",
             descricao: "Pasta destinada a promover a imagem da casa, gerar conteúdo e organizar eventos que aumentem a visibilidade.",
-            lider: "Menex"
+            lider: "Kenner",
+            instagram: "https://www.instagram.com/igorb_amoroso/"
         },
         {
             icone: TbDog,
             nomePasta: "DECO",
             descricao: "Essa pasta é destinada a cuidar do cachorro.",
-            lider: "Pressa"
+            lider: "Pressa",
+            instagram: "https://www.instagram.com/lucasopressa/"
         },
         {
             icone: MdOutlineProductionQuantityLimits,
             nomePasta: "PRODUTOS",
             descricao: "Pasta destinada ao planejamento e desenvolvimento dos produtos da República, como camiseta, colete, corta-vento, etc..",
-            lider: "Vini"
+            lider: "Menex",
+            instagram: "https://www.instagram.com/ze_menex/"
         },
         {
             icone: TbCirclesRelation,
             nomePasta: "RECURSOS HUMANOS",
             descricao: "Pasta destinada a gerir as relações entre os moradores, promover um ambiente saudável e garantir que todos contribuam de forma justa para o bom funcionamento da casa.",
-            lider: "Dudu"
+            lider: "Dudu",
+            instagram: "https://www.instagram.com/dudu.ferraro/"
         },
         {
             icone: MdOutlineAttachMoney,
             nomePasta: "FINANCEIRO",
             descricao: "Pasta destinada ao controle das despesas da casa e a garantir que a República seja financeiramente saudável.",
-            lider: "Canastra"
+            lider: "Mister",
+            instagram: "https://www.instagram.com/albert.lages/"
         }
     ];
 
@@ -74,6 +82,7 @@ const Pastas = () => {
                         nomePasta={info.nomePasta}
                         descricao={info.descricao}
                         lider={info.lider}
+                        instagram={info.instagram}
                     />
                 ))}
             </div>

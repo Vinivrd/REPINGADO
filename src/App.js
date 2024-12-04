@@ -8,6 +8,7 @@ import Casa from './components/casa/Casa'
 import Pastas from "./components/pastas/Pastas";
 import Role from "./components/roles/Role";
 import Footer from "./components/footer/Footer";
+import Produtos from "./components/produtos/Produtos";
 
 const App = () => {
   
@@ -20,6 +21,7 @@ const App = () => {
         <Casa/>
         <Moradores/>
         <Pastas/>
+        <Produtos/>
         <Role/>
         <Footer/>
      </div>
