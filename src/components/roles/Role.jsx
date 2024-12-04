@@ -3,7 +3,7 @@ import Title from "../assets/Tittle";
 import CardRole from "./CardRole"
 const Role = () => {
     return (
-        <div className="relative w-[60%] m-auto pt-11" id="roles">
+        <div className="relative w-full px-4 md:w-[60%] m-auto pt-11" id="roles">
             <Title title="ROLES" title2="Aqui estão as nossas festas" />
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-8">
                 <CardRole

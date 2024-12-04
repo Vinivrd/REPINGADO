@@ -4,37 +4,35 @@ import { FaWhatsapp } from "react-icons/fa";
 
 const Footer = () => {
     return (
-        <footer class=" bottom-0 left-0 z-20 w-full p-4 bg-white border-t border-gray-200 shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-zinc-900 dark:border-gray-600 mt-10">
-            <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">
-                codado pelo vinao
+        <footer className="bottom-0 left-0 z-20 w-full p-4 bg-white border-t border-gray-200 shadow flex items-center justify-between dark:bg-zinc-900 dark:border-gray-600 mt-10">
+            <span className="text-sm text-gray-500 dark:text-gray-400">
+                codado pelo vinão
             </span>
-            <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0 space-x-4">
+            <ul className="flex items-center gap-4 text-sm font-medium text-gray-500 dark:text-gray-400">
                 <li>
-                    <a href="#" class="hover:underline ">Home</a>
+                    <a href="#" className="hover:underline">Home</a>
                 </li>
 
                 <li>
-                    <a href="https://github.com/Vinivrd" class="text-gray-400 hover:text-gray-900 dark:hover:text-white">
+                    <a href="https://github.com/Vinivrd" className="text-gray-400 hover:text-gray-900 dark:hover:text-white text-xl">
                         <SlSocialGithub/>
-                        <span class="sr-only">GitHub account</span>
+                        <span className="sr-only">GitHub account</span>
                     </a>
                 </li>
 
                 <li>
-                    <a href="https://www.instagram.com/repingado/" class="text-gray-400 hover:text-gray-900 dark:hover:text-white">
+                    <a href="https://www.instagram.com/repingado/" className="text-gray-400 hover:text-gray-900 dark:hover:text-white text-xl">
                         <SlSocialInstagram/>
-                        <span class="sr-only">Instagram</span>
+                        <span className="sr-only">Instagram</span>
                     </a>
                 </li>
 
                 <li>
-                    <a href="https://wa.me/5511969238993" class="text-gray-400 hover:text-gray-900 dark:hover:text-white">
+                    <a href="https://wa.me/5511969238993" className="text-gray-400 hover:text-gray-900 dark:hover:text-white text-xl">
                         <FaWhatsapp/>
-                        <span class="sr-only">Whatsapp</span>
+                        <span className="sr-only">Whatsapp</span>
                     </a>
                 </li>
-
-
             </ul>
         </footer>
     );
