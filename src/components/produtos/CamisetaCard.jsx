@@ -9,21 +9,11 @@ const CamisetaCard = ({ nome, descricao }) => {
         <div className="flex flex-col items-center">
             <div className="h-[400px] w-full bg-gray-100 rounded-lg shadow-lg">
                 <Canvas
-                    camera={{ position: [0, 0, 5], fov: 45 }}
+                    camera={{ position: [0, 0, 5], fov: 60 }}
                     shadows
                 >
                     <Stage environment="city" intensity={0.6}>
-                        {/* Replace OrbitControls with PresentationControls for better fixed camera */}
-                        <PresentationControls
-                            global
-                            config={{ mass: 2, tension: 500 }}
-                            snap={{ mass: 4, tension: 1500 }}
-                            rotation={[0, 0, 0]}
-                            polar={[-Math.PI / 3, Math.PI / 3]}
-                            azimuth={[-Math.PI / 1.4, Math.PI / 2]}
-                        >
                             <Camiseta3D />
-                        </PresentationControls>
                     </Stage>
                 </Canvas>
             </div>

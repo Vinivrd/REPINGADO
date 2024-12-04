@@ -1,37 +1,32 @@
 import React, { useRef, useEffect } from 'react';
 import { useFrame } from '@react-three/fiber';
-import { useGLTF } from '@react-three/drei';
+import { useGLTF, OrbitControls } from '@react-three/drei';
 
 const Camiseta3D = () => {
     const meshRef = useRef();
     const { scene } = useGLTF('/models/tshirt/scene.gltf');
 
-    // Configuração inicial do modelo
-    useEffect(() => {
-        if (scene) {
-            scene.scale.set(0.5, 0.5, 0.5);
-            scene.position.set(0, -1, 0);
-            scene.rotation.set(0, 0, 0);
-        }
-    }, [scene]);
-
     // Animação de rotação
-    useFrame(() => {
-        if (meshRef.current) {
-            meshRef.current.rotation.y += 0.003;
-        }
-    });
+    useFrame((state) => {
+        const t = state.clock.getElapsedTime();
+      });
 
-    // Renderização do modelo
     return (
-        <group ref={meshRef}>
-            {scene && <primitive object={scene} />}
-        </group>
+        <>
+            <group ref={meshRef} position={[0, 0, 0]} scale={[1, 1, 1]}>
+                {scene && <primitive object={scene} />}
+            </group>
+            <OrbitControls
+              minPolarAngle={Math.PI / 2}
+              maxPolarAngle={Math.PI / 2}
+              enableZoom={false}
+              enablePan={false}
+            />
+        </>
     );
 };
 
 export default Camiseta3D;
 
-// Pré-carrega o modelo
 useGLTF.preload('/models/tshirt/scene.gltf');
  
