@@ -1,28 +1,19 @@
-import React, { useRef, useEffect } from 'react';
-import { useFrame } from '@react-three/fiber';
-import { useGLTF, OrbitControls } from '@react-three/drei';
+import React, { useRef } from 'react';
+import { useGLTF } from '@react-three/drei';
 
-const Camiseta3D = () => {
+const Camiseta3D = ({ id }) => {
     const meshRef = useRef();
     const { scene } = useGLTF('/models/tshirt/scene.gltf');
 
-    // Animação de rotação
-    useFrame((state) => {
-        const t = state.clock.getElapsedTime();
-      });
+    // Clone a cena para cada instância
+    const clonedScene = React.useMemo(() => {
+        return scene.clone();
+    }, [scene]);
 
     return (
-        <>
-            <group ref={meshRef} position={[0, 0, 0]} scale={[1, 1, 1]}>
-                {scene && <primitive object={scene} />}
-            </group>
-            <OrbitControls
-              minPolarAngle={Math.PI / 2}
-              maxPolarAngle={Math.PI / 2}
-              enableZoom={false}
-              enablePan={false}
-            />
-        </>
+        <group ref={meshRef} position={[0, 0, 0]} scale={[1, 1, 1]}>
+            <primitive object={clonedScene} />
+        </group>
     );
 };
 
