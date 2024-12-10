@@ -7,13 +7,13 @@ const Produtos = () => {
         {
             id: 1,
             nome: "Camiseta Repingado 2022",
-            descricao: "Edição Pau na LOMBA",
+            descricao: "Edição interReps",
             cor: "Preto"
         },
         {
             id: 2,
             nome: "Camiseta Repingado 2023",
-            descricao: "Edição Magros",
+            descricao: "Edição Churras dos ex",
             cor: "vermelho e preto "
         },
         {
