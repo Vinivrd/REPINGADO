@@ -1,7 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const NavBar = () => {
+    const menuRef = useRef(null);
+    const buttonRef = useRef(null);
+
     const handleScroll = (e) => {
         const targetId = e.currentTarget.getAttribute("href").substring(1);
         const targetElement = document.getElementById(targetId);
@@ -34,13 +37,40 @@ const NavBar = () => {
         }
     };
 
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (isMenuOpen && 
+                menuRef.current && 
+                !menuRef.current.contains(event.target) &&
+                !buttonRef.current.contains(event.target)) {
+                setIsMenuOpen(false);
+            }
+        };
+
+        const handleScroll = () => {
+            if (isMenuOpen && window.innerWidth < 640) { // 640px is the 'sm' breakpoint in Tailwind
+                setIsMenuOpen(false);
+            }
+        };
+
+        document.addEventListener('mousedown', handleClickOutside);
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, [isMenuOpen]);
+
     return (
         <nav className="w-full bg-gray-50">
             <div className="w-full px-2 sm:px-6 lg:px-8">
                 <div className="relative flex h-16 items-center justify-between">
                     {/* Botao*/}
                     <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
-                        <button type="button"
+                        <button 
+                            ref={buttonRef}
+                            type="button"
                             className="relative inline-flex items-center justify-center rounded-md p-2 text-black hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
                             aria-controls="mobile-menu"
                             aria-expanded="false"
@@ -96,6 +126,7 @@ const NavBar = () => {
             <AnimatePresence>
                 {isMenuOpen && (
                     <motion.div
+                        ref={menuRef}
                         className="sm:hidden fixed top-16 right-0 w-full bg-gray-50 shadow-lg z-[99]"
                         id="mobile-menu"
                         initial="closed"

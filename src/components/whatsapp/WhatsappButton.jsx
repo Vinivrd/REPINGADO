@@ -19,7 +19,7 @@ const WhatsappButton = () => {
                     <button className="close-button" onClick={() => setIsExpanded(false)}>
                         <FaTimes />
                     </button>
-                    <h3>Bora trocar um papo</h3>
+                    <h3>Chame a gente?</h3>
                     <p>Clique no botão pra falar com a gente</p>
                     <button className="chat-button" onClick={handleWhatsAppClick}>
                         <FaWhatsapp /> Iniciar Conversa

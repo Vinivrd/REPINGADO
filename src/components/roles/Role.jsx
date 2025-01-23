@@ -7,21 +7,21 @@ const Role = () => {
             <Title title="EVENTOS" title2="Esses são os principais eventos do ano " />
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
                 <CardRole
-                    imgRole="https://d106p58duwuiz5.cloudfront.net/event/cover/a36317a0ef846a5a8cb19f18226cad4d.png"
+                    imgRole="/assets/role/3.jpg"
                     nomeRole="Nunca Caba Pinga"
                     descricao="O maior evento organizado por república da calourada"
                     republica="PINGADO & CABAÑAS"
                 />
 
                 <CardRole
-                    imgRole="https://d106p58duwuiz5.cloudfront.net/event/cover/a36317a0ef846a5a8cb19f18226cad4d.png"
+                    imgRole="/assets/role/1.jpg"
                     nomeRole="Churras das famílias"
                     descricao="Churrasco que reúne a família de todos os moradores"
                     republica="PINGADO"
                 />
                 
                 <CardRole
-                    imgRole="https://d106p58duwuiz5.cloudfront.net/event/cover/a36317a0ef846a5a8cb19f18226cad4d.png"
+                    imgRole="/assets/role/2.jpg"
                     nomeRole="Churras do ex"
                     descricao="Churrasco que reúne todos os moradores que já passaram pela república"
                     republica="PINGADO & EX-MORADORES"
