@@ -1,8 +1,5 @@
 import React from 'react';
-import { Canvas } from '@react-three/fiber';
-import { Stage, OrbitControls } from '@react-three/drei';
 import { FaWhatsapp } from 'react-icons/fa';
-import Camiseta3D from './Camiseta3D';
 
 const CamisetaCard = ({ id, nome, descricao, cor }) => {
     const handleWhatsAppClick = () => {
@@ -14,22 +11,17 @@ const CamisetaCard = ({ id, nome, descricao, cor }) => {
 
     return (
         <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer">
-            <div className="h-[400px] w-full bg-gray-50">
-                <Canvas
-                    camera={{ position: [10, 0, 7], fov: 50 }}
-                    shadows
+            <div className="h-[400px] w-full bg-gray-50 flex items-center justify-center">
+                <video
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="h-full w-full object-cover"
                 >
-                    <Stage environment="city" intensity={0.6}>
-                        <Camiseta3D id={id} />
-                    </Stage>
-                    <OrbitControls
-                        enableZoom={false}
-                        minPolarAngle={Math.PI / 2}
-                        maxPolarAngle={Math.PI / 2}
-                        autoRotate
-                        autoRotateSpeed={4.2}
-                    />
-                </Canvas>
+                    <source src="/assets/t-shirts/primeiraCamisa.mp4" type="video/mp4" />
+                    Seu navegador não suporta o elemento de vídeo.
+                </video>
             </div>
             <div className="p-6">
                 <h3 className="text-2xl font-bold text-gray-800">{nome}</h3>
