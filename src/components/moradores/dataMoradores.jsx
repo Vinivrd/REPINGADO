@@ -85,7 +85,7 @@ const moradores = [
     },
     {
         nome: "Dona Lu",
-        curso: "Cuidar da Casa",
+        curso: "Mãezona da casa",
         ano: "2021",
         foto: "26",
         insta: "https://www.instagram.com/lucia13santos0",

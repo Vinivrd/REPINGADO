@@ -28,7 +28,7 @@ const Footer = () => {
                 </li>
 
                 <li>
-                    <a href="https://wa.me/5511969238993" className="text-gray-400 hover:text-gray-900 dark:hover:text-white text-xl">
+                    <a href="https://wa.me/5516999626089" className="text-gray-400 hover:text-gray-900 dark:hover:text-white text-xl">
                         <FaWhatsapp/>
                         <span className="sr-only">Whatsapp</span>
                     </a>

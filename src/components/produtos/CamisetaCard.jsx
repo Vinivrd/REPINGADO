@@ -6,14 +6,14 @@ import Camiseta3D from './Camiseta3D';
 
 const CamisetaCard = ({ id, nome, descricao, cor }) => {
     const handleWhatsAppClick = () => {
-        const phoneNumber = '5511969238993';
+        const phoneNumber = '5516999626089';
         const message = `Olá! Gostaria de saber mais sobre a ${nome}`;
         const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
         window.open(whatsappUrl, '_blank');
     };
 
     return (
-        <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+        <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer">
             <div className="h-[400px] w-full bg-gray-50">
                 <Canvas
                     camera={{ position: [10, 0, 7], fov: 50 }}
@@ -26,6 +26,8 @@ const CamisetaCard = ({ id, nome, descricao, cor }) => {
                         enableZoom={false}
                         minPolarAngle={Math.PI / 2}
                         maxPolarAngle={Math.PI / 2}
+                        autoRotate
+                        autoRotateSpeed={4.2}
                     />
                 </Canvas>
             </div>

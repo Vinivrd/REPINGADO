@@ -4,7 +4,7 @@ import './WhatsappButton.css';
 
 const WhatsappButton = () => {
     const [isExpanded, setIsExpanded] = useState(false);
-    const phoneNumber = '5511969238993'; 
+    const phoneNumber = '5516999626089'; 
     const message = 'Opa, quer trocar uma ideia?';
 
     const handleWhatsAppClick = () => {

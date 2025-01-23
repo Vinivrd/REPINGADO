@@ -5,7 +5,7 @@ import Carousel from "../home/Carousel";
 const Casa = () => {
     return(
         <div className="mt-10" id="casa">
-            <Title title="CASA" title2="Fotos da nossa casa <3"/>
+            <Title title="FOTOS" title2="Fotos da nossa casa"/>
             <Carousel/> 
         </div>
     );
