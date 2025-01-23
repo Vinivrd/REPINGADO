@@ -17,12 +17,12 @@ const Role = () => {
                     imgRole="/assets/role/1.jpg"
                     nomeRole="Churras das famílias"
                     descricao="Churrasco que reúne a família de todos os moradores"
-                    republica="PINGADO"
+                    republica="PINGADO & FAMÍLIAS"
                 />
                 
                 <CardRole
-                    imgRole="/assets/role/2.jpg"
-                    nomeRole="Churras do ex"
+                    imgRole="/assets/role/2.png"
+                    nomeRole="Churras dos ex"
                     descricao="Churrasco que reúne todos os moradores que já passaram pela república"
                     republica="PINGADO & EX-MORADORES"
                 />
