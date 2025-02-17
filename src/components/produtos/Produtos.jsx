@@ -7,21 +7,21 @@ const Produtos = () => {
         {
             id: 1,
             nome: "Camiseta Repingado 2022",
-            descricao: "Edição interReps",
+            descricao: "Primeira edição da Repingado",
             cor: "Preto"
         },
-        {
-            id: 2,
-            nome: "Camiseta Repingado 2023",
-            descricao: "Edição Churras dos ex",
-            cor: "vermelho e preto "
-        },
-        {
-            id: 3,
-            nome: "Camiseta Repingado 2024",
-            descricao: "Edição churrasco dos pais",
-            cor: "branco"
-        }
+        // {
+        //     id: 2,
+        //     nome: "Camiseta Repingado 2023",
+        //     descricao: "Edição Churras dos ex",
+        //     cor: "vermelho e preto "
+        // },
+        // {
+        //     id: 3,
+        //     nome: "Camiseta Repingado 2024",
+        //     descricao: "Edição churrasco dos pais",
+        //     cor: "branco"
+        // }
     ];
 
     return (
