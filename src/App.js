@@ -1,5 +1,5 @@
 import React from "react";
-
+import ConversionTracker from "./components/ConversionTracker";
 import NavBar from "./components/navBar/NavBar"
 import Home from "./components/home/Home"
 import Sobre from "./components/sobre/Sobre";
@@ -15,6 +15,7 @@ const App = () => {
 
    return(
      <div>
+        <ConversionTracker eventType="page_view" />
         <NavBar/>
         <Home/>
         <Sobre/>
