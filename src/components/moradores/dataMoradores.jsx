@@ -195,6 +195,34 @@ const moradores = [
         foto: "23",
         insta: "https://www.instagram.com/lucasopressa",
     },
+    {
+        nome: "Peladão",
+        curso: "Educação Física, UFSCAR",
+        ano: "2025",
+        foto: "29",
+        insta: "https://www.instagram.com/paiao_math06/",
+    },
+    {
+        nome: "Jussara",
+        curso: "Engenharia de Materiais, UFSCAR",
+        ano: "2025",
+        foto: "30",
+        insta: "https://www.instagram.com/leonardo.morato2/",
+    },
+    {
+        nome: "Chapini",
+        curso: "Engenharia fisica, UFSCAR",
+        ano: "2025",
+        foto: "31",
+        insta: "https://www.instagram.com/rafaec_02/",
+    },
+    {
+        nome: "Judas",
+        curso: "Engenharia de Materiais, CAASO",
+        ano: "2025",
+        foto: "32",
+        insta: "https://www.instagram.com/gabrielcampano_/",
+    },
 ];
 
 export default moradores;

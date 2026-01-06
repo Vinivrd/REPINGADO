@@ -4,7 +4,7 @@ const Card = ({morador}) => {
     const handleClick = () => {
         window.open(morador.insta, '_blank');
     };
-    const velhos = ["Hill","Mister","Pagode","Dona Lu"]
+    const velhos = ["Hill","Mister","Dona Lu"]
     const isCurrentResident = parseInt(morador.ano) >= 2023 || velhos.includes(morador.nome);
 
     return (
