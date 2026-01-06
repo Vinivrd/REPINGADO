@@ -17,15 +17,15 @@ const Pastas = () => {
             icone: MdCleaningServices,
             nomePasta: "LIMPEZA",
             descricao: "Pasta destinada a manter a organização dos ambientes, garantindo um espaço agradável para os moradores.",
-            lider: "PINGUIM",
-            instagram: "https://www.instagram.com/caio_braga1405/"
+            lider: "Peladão",
+            instagram: "https://www.instagram.com/paiao_math06/"
         },
         {
             icone: FaGear,
             nomePasta: "MANUTENÇÃO",
             descricao: "Pasta destinada a garantir as boas condições da estrutura da casa",
-            lider: "Hill",
-            instagram: "https://www.instagram.com/mathias.hilbert/"
+            lider: "Pressa",
+            instagram: "https://www.instagram.com/lucasopressa/"
         },
         {
             icone: GiRelationshipBounds,
@@ -45,8 +45,8 @@ const Pastas = () => {
             icone: TbDog,
             nomePasta: "DECO",
             descricao: "Essa pasta é destinada a cuidar do cachorro.",
-            lider: "Pressa",
-            instagram: "https://www.instagram.com/lucasopressa/"
+            lider: "Vini",
+            instagram: "https://www.instagram.com/vinivrd/"
         },
         {
             icone: MdOutlineProductionQuantityLimits,
@@ -59,14 +59,14 @@ const Pastas = () => {
             icone: TbCirclesRelation,
             nomePasta: "RECURSOS HUMANOS",
             descricao: "Pasta destinada a gerir as relações entre os moradores, promover um ambiente saudável e garantir que todos contribuam de forma justa para o bom funcionamento da casa.",
-            lider: "Dudu",
+            lider: "Pinguim",
             instagram: "https://www.instagram.com/dudu.ferraro/"
         },
         {
             icone: MdOutlineAttachMoney,
             nomePasta: "FINANCEIRO",
             descricao: "Pasta destinada ao controle das despesas da casa e a garantir que a República seja financeiramente saudável.",
-            lider: "Mister",
+            lider: "Letreco",
             instagram: "https://www.instagram.com/albert.lages/"
         }
     ];
