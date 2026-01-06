@@ -5,7 +5,9 @@ const Card = ({morador}) => {
         window.open(morador.insta, '_blank');
     };
     const velhos = ["Hill","Mister","Dona Lu"]
-    const isCurrentResident = parseInt(morador.ano) >= 2023 || velhos.includes(morador.nome);
+    const exMoradores = ["Dudu","Sorriso"]
+    const isCurrentResident = (parseInt(morador.ano) >= 2023 || velhos.includes(morador.nome)) 
+                            && !exMoradores.includes(morador.nome);
 
     return (
         <div 
