@@ -223,6 +223,13 @@ const moradores = [
         foto: "32",
         insta: "https://www.instagram.com/gabrielcampano_/",
     },
+    {
+        nome: "Djoko",
+        curso: "Cachorro do carai",
+        ano: "2025",
+        foto: "33",
+        insta: "",
+    },
 ];
 
 export default moradores;
